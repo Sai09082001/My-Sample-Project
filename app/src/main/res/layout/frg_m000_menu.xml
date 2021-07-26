@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_message"
+        android:layout_marginHorizontal="60dp"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-60dp"
+        android:layout_gravity="center"
+        android:background="@color/orage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:text="MESSAGE"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_phone"
+        android:layout_marginHorizontal="60dp"
+        android:padding="16dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/pink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:text="PHONE"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+</FrameLayout>

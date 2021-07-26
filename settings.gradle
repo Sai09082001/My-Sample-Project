@@ -1,0 +1,2 @@
+rootProject.name = "PRM391x_Project_1_HoaiNam"
+include ':app'

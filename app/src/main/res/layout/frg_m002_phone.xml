@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/orage">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="10dp"
+            android:text="PHONE"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+    </TableRow>
+    <TextView
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:text="Call to...!"
+        android:textSize="36dp"
+        android:textColor="@color/orage"
+        android:layout_height="wrap_content"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/oragehight">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_phone" />
+
+        <EditText
+            android:id="@+id/phone_some_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="10dp"
+            android:background="@color/oragehight"
+            android:hint="Someone"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="24dp" />
+    </TableRow>
+
+
+    <RadioGroup
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:buttonTint="@color/orage"
+            android:text="Hour"
+            android:textColor="@color/orage"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/rb_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:buttonTint="@color/orage"
+            android:text="Minute"
+            android:textColor="@color/orage"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/rb_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:buttonTint="@color/orage"
+            android:text="Second"
+            android:textColor="@color/orage"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/gray">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_schedule" />
+
+        <EditText
+            android:background="@color/gray"
+            android:id="@+id/edt_phone_time"
+            android:textSize="24dp"
+            android:textColorHint="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start|center"
+            android:hint="Time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tv_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/orage"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SET UP"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+</LinearLayout>

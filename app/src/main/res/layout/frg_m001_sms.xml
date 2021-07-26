@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:background="@color/orage"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start|center"
+            android:src="@drawable/ic_back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <TextView
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start|center"
+            android:text="SMS"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </TableRow>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TableRow
+            android:background="@color/oragehight"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_gravity="start|center"
+                android:src="@drawable/ic_phone"
+                android:layout_height="36dp"
+                android:layout_width="36dp"/>
+
+            <EditText
+                android:id="@+id/edt_phone_sender"
+                android:background="@color/oragehight"
+                android:textSize="24dp"
+                android:textColorHint="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="start|center"
+                android:hint="Sender"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+        <LinearLayout
+            android:background="@color/oragelow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edt_message"
+                android:background="@color/oragelow"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="24dp"
+                android:textColorHint="@color/orage"
+                android:layout_marginStart="10dp"
+                android:hint="Message"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RadioGroup
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:buttonTint="@color/orage"
+            android:textSize="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/orage"
+            android:id="@+id/rb_hour"
+            android:text="Hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:buttonTint="@color/orage"
+            android:textColor="@color/orage"
+            android:textSize="20dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/rb_minute"
+            android:text="Minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:buttonTint="@color/orage"
+            android:textColor="@color/orage"
+            android:textSize="20dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/rb_second"
+            android:text="Second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <TableRow
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start|center"
+            android:src="@drawable/ic_schedule"
+            android:layout_height="36dp"
+            android:layout_width="36dp"/>
+
+        <EditText
+            android:background="@color/gray"
+            android:id="@+id/edt_time"
+            android:textSize="24dp"
+            android:textColorHint="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start|center"
+            android:hint="Time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </TableRow>
+    <TextView
+        android:id="@+id/tv_setup"
+        android:textColor="@color/white"
+        android:background="@color/orage"
+        android:layout_marginTop="10dp"
+        android:textSize="24dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:text="SET UP"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
